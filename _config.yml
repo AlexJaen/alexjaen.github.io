@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Lorealex.io"
 title_separator          : "-"
 name                     : "Lorealex"
-description              : "Posts about security, CTFs and networking"
+description              : "Infosec writeups"
 url                      : "https://Lorealex.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "Lorealex/Lorealex.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -102,9 +102,9 @@ analytics:
 # Site Author
 author:
   name             : "Lorealex"
-  avatar           : "/assets/images/avatar.png"
+  avatar           : "/assets/images/avatar.jpg"
   bio              : "Pentester, CTF player<br>HackTheBox ATeam"
-  location         : "Canada"
+  location         : "Spain"
   email            : "alejandrojaencrespo@gmail.com"
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
@@ -117,7 +117,7 @@ author:
   github           : 
   gitlab           :
   google_plus      :
-  keybase          : "snowscan"
+  keybase          : 
   instagram        :
   lastfm           :
   linkedin         :  "alejandro-jaen-crespo"
