@@ -1,7 +1,7 @@
 ---
 layout: single
 title: OnSystemShellDredd - Proving grounds Play
-date: 2023-06-14
+date: 2023-06-13
 classes: wide
 header:
   teaser: /assets/images/linux.png
