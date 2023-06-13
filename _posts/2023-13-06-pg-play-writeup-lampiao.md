@@ -24,11 +24,13 @@ This blog post is a writeup of the Lampiao machine from Proving grounds play.
 
 ### Summary
 ------------------
-- The webserver has a vulnerable Drupal version to RCE.
-- We access exploiting this vulnerability.
-- We are able to find credentials which allows us to login with a higher privileged user than www-data.
-- The Linux kernel version it's vulnerable to dirtycow.
-- Exploiting this dirtycow vulnerability allows us to gain access as root user.
+- The webserver has a vulnerable function that can be used to browse directories and read files
+- We can read the SSH private key from the `nobody` user home directory and log in as `nobody`
+- We're within a container but we can log in with SSH as user `monitor` to the host (127.0.0.1)
+- There's a logMonitor application running with elevated capabilities (it can read log files even if not running as root)
+- This is a hint that we should be looking at capabilities of files (`cap_dac_read_search+ei`)
+- We look at the entire filesystem for files with special cap's and we find that the `tac` application has that capabily and we can read `/root/root.txt`
+
 ### Detailed steps
 ------------------
 
@@ -101,3 +103,16 @@ Linpeas found the following files with an interesting credentials:
 
 This credentials allowed me to log in via SSH with "tiago" user
 ![shell3](D:\Alex\ESTUDIOS\OSCP\Lorealex.github.io\assets\images\pg-play-lampiao\18.JPG)
+
+
+Linpeas found a kernel vulnerability too:
+```
+[+] [CVE-2016-5195] dirtycow 2
+
+   Details: https://github.com/dirtycow/dirtycow.github.io/wiki/VulnerabilityDetails
+   Exposure: highly probable
+   Tags: debian=7|8,RHEL=5|6|7,[ ubuntu=14.04|12.04 ],ubuntu=10.04{kernel:2.6.32-21-generic},ubuntu=16.04{kernel:4.4.0-21-generic}
+   Download URL: https://www.exploit-db.com/download/40839
+   ext-url: https://www.exploit-db.com/download/40847
+   Comments: For RHEL/CentOS see exact vulnerable versions here: https://access.redhat.com/sites/default/files/rh-cve-2016-5195_5.sh
+```
