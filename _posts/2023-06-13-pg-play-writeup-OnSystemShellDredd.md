@@ -21,7 +21,7 @@ tags:
 
 ![](/assets/images/linux.png)
 
-This blog post is a writeup of the Lampiao machine from Proving grounds play.
+This blog post is a writeup of the OnSystemShellDredd machine from Proving grounds play.
 
 ### Summary
 ------------------
