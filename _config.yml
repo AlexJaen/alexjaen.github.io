@@ -103,7 +103,7 @@ analytics:
 author:
   name             : "Lorealex"
   avatar           : "/assets/images/avatar.jpg"
-  bio              : "Pentester, CTF player<br>HackTheBox ATeam"
+  bio              : "Sysadmin and pentesting student"
   location         : "Spain"
   email            : "alejandrojaencrespo@gmail.com"
   uri              :
@@ -114,7 +114,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : 
+  github           : "https://github.com/Lorealex"
   gitlab           :
   google_plus      :
   keybase          : 
@@ -131,6 +131,7 @@ author:
   weibo            :
   xing             :
   youtube          : # "https://youtube.com/c/MichaelRoseDesign"
+  buymeacoffee     : "https://bmc.link/lorealex99"
 
 
 # Reading Files
