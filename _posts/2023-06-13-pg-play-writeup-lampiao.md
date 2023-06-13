@@ -24,13 +24,11 @@ This blog post is a writeup of the Lampiao machine from Proving grounds play.
 
 ### Summary
 ------------------
-- The webserver has a vulnerable function that can be used to browse directories and read files
-- We can read the SSH private key from the `nobody` user home directory and log in as `nobody`
-- We're within a container but we can log in with SSH as user `monitor` to the host (127.0.0.1)
-- There's a logMonitor application running with elevated capabilities (it can read log files even if not running as root)
-- This is a hint that we should be looking at capabilities of files (`cap_dac_read_search+ei`)
-- We look at the entire filesystem for files with special cap's and we find that the `tac` application has that capabily and we can read `/root/root.txt`
-
+- The webserver has a vulnerable Drupal version to RCE.
+- We access exploiting this vulnerability.
+- We are able to find credentials which allows us to login with a higher privileged user than www-data.
+- The Linux kernel version it's vulnerable to dirtycow.
+- Exploiting this dirtycow vulnerability allows us to gain access as root user.
 ### Detailed steps
 ------------------
 
