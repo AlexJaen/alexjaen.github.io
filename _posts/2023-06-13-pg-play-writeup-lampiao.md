@@ -67,6 +67,7 @@ The first step was to check the vulnerability. I successfully executed the explo
 Now, in order to gain access to the victim's machine, I uploaded a PHP revershell to the webserver.
 
 Configuring the webshell:
+
 ![shell1](\assets\images\pg-play-lampiao\7.JPG)
 
 After configuring the webshell, I opened an HTTP server on my Kali machine with python in my webshell directory:
@@ -92,6 +93,7 @@ Having access to www-data user I was able to find the first flag:
 
 
 
+
 ### Privilege scalation
 
 In order to elevete my privileges I used Linpeas.sh --> https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS
@@ -99,7 +101,7 @@ In order to elevete my privileges I used Linpeas.sh --> https://github.com/carlo
 Linpeas found the following files with an interesting credentials:
 ![creds](\assets\images\pg-play-lampiao\15.JPG)
 
-This credentials allowed me to log in via SSH with "tiago" user
+This credentials allowed me to log in via SSH as "tiago" user
 ![kernel1](\assets\images\pg-play-lampiao\18.JPG)
 
 
@@ -118,7 +120,7 @@ Linpeas found a kernel vulnerability too:
 Kernel version:
 ![kernel2](\assets\images\pg-play-lampiao\13.JPG)
 
-To exploit this vulnerability I downloaded the exploit and compiled it with:
+To exploit this vulnerability I downloaded the exploit code and compiled it with:
 ```
 g++ -Wall -pedantic -02 -std=c++11 -pthread -o exploit 40847.cpp -lutil
 ```
