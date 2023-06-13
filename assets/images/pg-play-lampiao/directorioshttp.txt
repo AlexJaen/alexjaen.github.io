@@ -1,0 +1,154 @@
+dirsearch -u 192.168.201.48:1898
+
+  _|. _ _  _  _  _ _|_    v0.4.2                                                             
+ (_||| _) (/_(_|| (_| )                                                                      
+                                                                                             
+Extensions: php, aspx, jsp, html, js | HTTP method: GET | Threads: 30 | Wordlist size: 10927
+
+Output File: /home/kali/.dirsearch/reports/1898_23-06-01_11-36-24.txt
+
+Error Log: /home/kali/.dirsearch/logs/errors-23-06-01_11-36-24.log
+
+Target: http://192.168.201.48:1898/
+
+[11:36:24] Starting: 
+[11:36:25] 403 -  294B  - /.ht_wsr.txt                                     
+[11:36:25] 403 -  297B  - /.htaccess.orig                                  
+[11:36:25] 403 -  297B  - /.htaccess.bak1
+[11:36:25] 403 -  299B  - /.htaccess.sample
+[11:36:25] 403 -  297B  - /.htaccess.save
+[11:36:25] 403 -  298B  - /.htaccess_extra
+[11:36:25] 403 -  297B  - /.htaccess_orig
+[11:36:25] 403 -  295B  - /.htaccess_sc
+[11:36:25] 403 -  295B  - /.htaccessBAK
+[11:36:25] 403 -  296B  - /.htaccessOLD2
+[11:36:25] 403 -  295B  - /.htaccessOLD
+[11:36:25] 403 -  287B  - /.htm                                            
+[11:36:25] 403 -  288B  - /.html
+[11:36:25] 403 -  297B  - /.htpasswd_test
+[11:36:25] 403 -  293B  - /.htpasswds
+[11:36:25] 403 -  294B  - /.httr-oauth
+[11:36:26] 403 -  287B  - /.php                                            
+[11:36:26] 403 -  288B  - /.php3                                           
+[11:36:27] 200 -    1KB - /COPYRIGHT.txt                                    
+[11:36:27] 200 -  108KB - /CHANGELOG.txt                                    
+[11:36:28] 200 -    2KB - /INSTALL.mysql.txt                                
+[11:36:28] 200 -    2KB - /INSTALL.pgsql.txt                                
+[11:36:28] 200 -   18KB - /LICENSE.txt                                      
+[11:36:28] 200 -    9KB - /MAINTAINERS.txt
+[11:36:28] 200 -   18KB - /INSTALL.txt
+[11:36:28] 200 -    5KB - /README.txt                                       
+[11:36:28] 200 -   10KB - /UPGRADE.txt                                      
+[11:36:34] 403 -    3KB - /authorize.php                                    
+[11:36:37] 403 -    7KB - /cron.php                                         
+[11:36:40] 301 -  325B  - /includes  ->  http://192.168.201.48:1898/includes/
+[11:36:40] 200 -   10KB - /includes/                                        
+[11:36:40] 200 -   11KB - /index.php                                        
+[11:36:41] 200 -    3KB - /install.php                                      
+[11:36:42] 200 -  132KB - /includes/bootstrap.inc                           
+[11:36:44] 301 -  321B  - /misc  ->  http://192.168.201.48:1898/misc/       
+[11:36:45] 301 -  324B  - /modules  ->  http://192.168.201.48:1898/modules/ 
+[11:36:45] 200 -    9KB - /modules/                                         
+[11:36:48] 200 -  271B  - /profiles/minimal/minimal.info                    
+[11:36:48] 200 -  278B  - /profiles/testing/testing.info                    
+[11:36:48] 200 -  743B  - /profiles/standard/standard.info                  
+[11:36:48] 301 -  325B  - /profiles  ->  http://192.168.201.48:1898/profiles/
+[11:36:49] 200 -    2KB - /robots.txt                                       
+[11:36:49] 301 -  324B  - /scripts  ->  http://192.168.201.48:1898/scripts/ 
+[11:36:49] 200 -    3KB - /scripts/                                         
+[11:36:50] 403 -  297B  - /server-status/                                   
+[11:36:50] 403 -  296B  - /server-status                                    
+[11:36:50] 200 -  151B  - /sites/all/libraries/README.txt                   
+[11:36:50] 200 -    1KB - /sites/all/modules/README.txt                     
+[11:36:50] 200 - 1020B  - /sites/all/themes/README.txt                      
+[11:36:50] 200 -    0B  - /sites/example.sites.php                          
+[11:36:50] 200 -  904B  - /sites/README.txt                                 
+[11:36:50] 301 -  322B  - /sites  ->  http://192.168.201.48:1898/sites/     
+[11:36:52] 301 -  323B  - /themes  ->  http://192.168.201.48:1898/themes/   
+[11:36:52] 200 -    2KB - /themes/                                          
+[11:36:53] 403 -    4KB - /update.php                                       
+[11:36:54] 200 -    2KB - /web.config                                       
+[11:36:55] 200 -   42B  - /xmlrpc.php                                       
+                                                                             
+Task Completed
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+gobuster dir -r -u http://192.168.201.48 -w /usr/share/wordlists/dirb/big.txt -x php,html,txt
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://192.168.201.48
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/wordlists/dirb/big.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Extensions:              php,html,txt
+[+] Follow Redirect:         true
+[+] Timeout:                 10s
+===============================================================
+2023/06/01 11:34:10 Starting gobuster in directory enumeration mode
+===============================================================
+Error: error on running gobuster: unable to connect to http://192.168.201.48/: Get "http://192.168.201.48/": net/http: HTTP/1.x transport connection broken: malformed HTTP status code "_____"
+                                                                                             
+┌──(root㉿kali)-[/home/kali/OSCP/play/lampiao]
+└─# gobuster dir -r -u http://192.168.201.48:1898 -w /usr/share/wordlists/dirb/big.txt -x php,html,txt
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://192.168.201.48:1898
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/wordlists/dirb/big.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Extensions:              php,html,txt
+[+] Follow Redirect:         true
+[+] Timeout:                 10s
+===============================================================
+2023/06/01 11:36:19 Starting gobuster in directory enumeration mode
+===============================================================
+/.htaccess            (Status: 403) [Size: 292]
+/.htpasswd            (Status: 403) [Size: 292]
+/.htaccess.php        (Status: 403) [Size: 296]
+/.htpasswd.php        (Status: 403) [Size: 296]
+/.htaccess.html       (Status: 403) [Size: 297]
+/.htpasswd.html       (Status: 403) [Size: 297]
+/.htaccess.txt        (Status: 403) [Size: 296]
+/.htpasswd.txt        (Status: 403) [Size: 296]
+/LICENSE.txt          (Status: 200) [Size: 18092]
+/README.txt           (Status: 200) [Size: 5382] 
+/authorize.php        (Status: 403) [Size: 2926] 
+/cron.php             (Status: 403) [Size: 7428] 
+/includes             (Status: 200) [Size: 10315]
+/index.php            (Status: 200) [Size: 11446]
+/install.php          (Status: 200) [Size: 3291] 
+/misc                 (Status: 200) [Size: 15487]
+/modules              (Status: 200) [Size: 8718] 
+/profiles             (Status: 200) [Size: 1536] 
+/robots.txt           (Status: 200) [Size: 2189] 
+/robots.txt           (Status: 200) [Size: 2189] 
+/scripts              (Status: 200) [Size: 3041] 
+/server-status        (Status: 403) [Size: 296]  
+/sites                (Status: 200) [Size: 1539] 
+/themes               (Status: 200) [Size: 1912] 
+/update.php           (Status: 403) [Size: 4159] 
+/xmlrpc.php           (Status: 200) [Size: 42]   
+                                                 
+===============================================================
+2023/06/01 11:40:06 Finished
+===============================================================
