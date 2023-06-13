@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Lampiao - Proving grounds Play
-date: 2023-13-06
+date: 2023-06-13
 classes: wide
 header:
   teaser: /assets/images/linux.png
@@ -94,13 +94,13 @@ Having access to www-data user I was able to find the first flag:
 
 ### Privilege scalation
 
-To elevete my privileges I used Linpeas.sh --> https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS
+In order to elevete my privileges I used Linpeas.sh --> https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS
 
 Linpeas found the following files with an interesting credentials:
 ![creds](D:\Alex\ESTUDIOS\OSCP\Lorealex.github.io\assets\images\pg-play-lampiao\15.JPG)
 
 This credentials allowed me to log in via SSH with "tiago" user
-![shell3](D:\Alex\ESTUDIOS\OSCP\Lorealex.github.io\assets\images\pg-play-lampiao\18.JPG)
+![kernel1](D:\Alex\ESTUDIOS\OSCP\Lorealex.github.io\assets\images\pg-play-lampiao\18.JPG)
 
 
 Linpeas found a kernel vulnerability too:
@@ -114,3 +114,9 @@ Linpeas found a kernel vulnerability too:
    ext-url: https://www.exploit-db.com/download/40847
    Comments: For RHEL/CentOS see exact vulnerable versions here: https://access.redhat.com/sites/default/files/rh-cve-2016-5195_5.sh
 ```
+
+Kernel version:
+![kernel2](D:\Alex\ESTUDIOS\OSCP\Lorealex.github.io\assets\images\pg-play-lampiao\13.JPG)
+
+
+![kernel3](D:\Alex\ESTUDIOS\OSCP\Lorealex.github.io\assets\images\pg-play-lampiao\13.JPG)
