@@ -14,6 +14,7 @@ tags:
   - drupal
   - dirtycow
   - kernel
+  - easy
 ---
 
 ## Linux

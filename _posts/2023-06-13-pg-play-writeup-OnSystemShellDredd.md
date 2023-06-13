@@ -15,6 +15,7 @@ tags:
   - ssh
   - cpulimit
   - suid
+  - easy
 ---
 
 ## Linux
