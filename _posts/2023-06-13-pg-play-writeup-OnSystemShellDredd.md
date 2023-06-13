@@ -25,11 +25,9 @@ This blog post is a writeup of the Lampiao machine from Proving grounds play.
 
 ### Summary
 ------------------
-- The webserver has a vulnerable Drupal version to RCE.
-- We access exploiting this vulnerability.
-- We are able to find credentials which allows us to login with a higher privileged user than www-data.
-- The Linux kernel version it's vulnerable to dirtycow.
-- Exploiting this dirtycow vulnerability allows us to gain access as root user.
+- FTP service allows us to access as anonymous user and obtain a RSA SSH key.
+- This key can be used to access via SSH.
+- Having access an attacker can exploit a command with the SUID to elevate privileges.
 
 ### Detailed steps
 ------------------
