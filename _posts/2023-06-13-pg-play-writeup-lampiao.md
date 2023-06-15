@@ -30,6 +30,7 @@ This blog post is a writeup of the Lampiao machine from Proving grounds play.
 - We are able to find credentials which allows us to login with a higher privileged user than www-data.
 - The Linux kernel version it's vulnerable to dirtycow.
 - Exploiting this dirtycow vulnerability allows us to gain access as root user.
+
 ### Detailed steps
 ------------------
 
