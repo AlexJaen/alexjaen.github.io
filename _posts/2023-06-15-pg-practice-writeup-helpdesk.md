@@ -14,7 +14,7 @@ tags:
   - easy
 ---
 
-## Linux
+## Windows
 
 ![](/assets/images/windows.png)
 
