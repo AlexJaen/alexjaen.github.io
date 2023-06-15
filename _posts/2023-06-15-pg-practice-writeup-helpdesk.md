@@ -76,6 +76,7 @@ In order to gain access I downloaded a python exploit from: https://github.com/P
 	![manageengine6](\assets\images\pg-practice-helpdesk\7.JPG)
 	
  - Before executing the payload I opened a netcat listener on 5555 port.
+ 
 	![manageengine7](\assets\images\pg-practice-helpdesk\6.JPG)
 	
  - The last step was run the exploit indicating the target, a valid credentials and our WAR file:
@@ -90,4 +91,5 @@ After running the exploit I was able to catch the reverse shell as a high privil
 
 Being NT Authority\System I could find the root flag in Administrator's desktop
 ![flag1](\assets\images\pg-practice-helpdesk\25.JPG)
+
 ![flag2](\assets\images\pg-practice-helpdesk\rootf.JPG)
