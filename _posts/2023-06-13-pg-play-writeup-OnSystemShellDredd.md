@@ -49,6 +49,7 @@ nmap -A --script=vuln 192.168.247.130 -p 21,61000 -o nmapa.txt
 ```
 ![nmap1](\assets\images\pg-play-onsystemshelldredd\01.JPG)
 
+### Explotation
 
 In order to gain access I tried to login as anonymous user in FTP service.
 I was able to access and find a SSH key:

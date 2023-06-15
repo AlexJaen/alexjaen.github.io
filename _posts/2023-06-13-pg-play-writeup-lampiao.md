@@ -45,7 +45,6 @@ Let's take a closer look at these ports with Nmap.
  ```
 ![nmap2](\assets\images\pg-play-lampiao\2.JPG)
 
-
 As we can see in the last picture, the 1898 port it's running an HTTP service. Nmap HTTP enum returns some interesting files as CHANGELOG.TXT
 
 CHANGELOG.txt it's a common file in Drupal which shows the current version.
@@ -53,6 +52,7 @@ In this case the current version it's `7.54`.
 
 ![changelog](\assets\images\pg-play-lampiao\5.JPG)
 
+### Explotation
 
 `Drupal 7.54` it's vulnerable to a remote code execution as we can see in `CVE-2018-7600` --> https://www.drupal.org/sa-core-2018-002
 To exploit this vulnerability I used the following python code --> https://github.com/pimps/CVE-2018-7600
