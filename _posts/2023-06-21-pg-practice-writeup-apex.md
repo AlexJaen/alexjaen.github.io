@@ -77,13 +77,13 @@ Trying to search for these files I was able to acces to "add_edit_event_user.php
 ![sqli2](\assets\images\pg-practice-apex\83.JPG)
 
 To make this job easier, I looked in the database.sql file mentioned above. I could find a table named 'user_secure' which contains usernames and passwords.
-![sqli2](\assets\images\pg-practice-apex\91_2.JPG)
+![sqli3](\assets\images\pg-practice-apex\91_2.jpg)
 
 After some attemps, I found a valid query using "substring" which can extract half password hash:
-![sqli3](\assets\images\pg-practice-apex\90.JPG)
+![sqli4](\assets\images\pg-practice-apex\90.JPG)
 
 Modifying this query I was able to get the other half (just replacing 1,32 by 32,60):
-![sqli4](\assets\images\pg-practice-apex\92.JPG)
+![sqli5](\assets\images\pg-practice-apex\92.JPG)
 
 Querys:
 ```
