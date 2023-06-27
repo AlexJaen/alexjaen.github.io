@@ -16,13 +16,13 @@ minimal_mistakes_skin    : "haxor" # "air", "aqua", "contrast", "dark", "dirt", 
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Lorealex.io"
+title                    : "AlexJaen.io"
 title_separator          : "-"
-name                     : "Lorealex"
+name                     : "AlexJaen"
 description              : "Infosec writeups"
-url                      : "https://Lorealex.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://AlexJaen.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "Lorealex/Lorealex.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "AlexJaen/AlexJaen.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 logo                     : "/assets/images/pc.png"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 breadcrumbs              : true # true, false (default)
@@ -101,7 +101,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Lorealex"
+  name             : "AlexJaen"
   avatar           : "/assets/images/avatar.jpg"
   bio              : "Sysadmin and pentesting student"
   location         : "Spain"
@@ -114,7 +114,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "Lorealex"
+  github           : "AlexJaen"
   gitlab           :
   google_plus      :
   keybase          : 
