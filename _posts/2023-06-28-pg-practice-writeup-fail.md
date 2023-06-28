@@ -24,13 +24,10 @@ This blog post is a writeup of the Fail machine from Proving Grounds Practice.
 
 ### Summary
 ------------------
-- The webserver has a vulnerable function that can be used to browse directories and read files
-- We can read the SSH private key from the `nobody` user home directory and log in as `nobody`
-- We're within a container but we can log in with SSH as user `monitor` to the host (127.0.0.1)
-- There's a logMonitor application running with elevated capabilities (it can read log files even if not running as root)
-- This is a hint that we should be looking at capabilities of files (`cap_dac_read_search+ei`)
-- We look at the entire filesystem for files with special cap's and we find that the `tac` application has that capabily and we can read `/root/root.txt`
-
+- The server runs a Rsync service which shares a /home folder without password.
+- Uploading a SSH key to this shared folder allows us to connect via SSH as fox user.
+- Fox user belongs to fail2ban group so we are able to modify some config files from this service.
+- Modifying /etc/fail2ban/action.d/iptables-multiform.conf and changing the actionban rule by a reverse shell line we are able to catch a reverse shell as root user.
 ### Detailed steps
 ------------------
 
