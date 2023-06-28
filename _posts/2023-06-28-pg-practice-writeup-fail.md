@@ -59,6 +59,7 @@ In order to exploit Rsync service, I tried to connect to fox folder using netcat
 fox
 ```
 ![rsync2](\assets\images\pg-practice-fail\6.JPG)
+
 The response from Rsync was OK which means that no password is needed to connect to this folder.
 
 I used rsync to download the folder but it was empty.
@@ -94,6 +95,7 @@ In /etc/fail2ban/jail.conf file I was able to find the bantime (1 minute), numer
 Knowing this I decided to modify /etc/fail2ban/action.d/iptables-multiform.conf which contains the `actionban` rule.
 This rule sets the action the server will take when a host is banned. 
 I modified this file to open a reverse shell when a host is banned:
+
 ![actionban](\assets\images\pg-practice-fail\18.JPG)
 ![actionban2](\assets\images\pg-practice-fail\19.JPG)
 
