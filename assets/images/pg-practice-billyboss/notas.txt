@@ -1,0 +1,6 @@
+https://www.exploit-db.com/exploits/49385
+
+
+https://deephacking.tech/reverse-shells-en-windows/#nc
+
+https://idiallo.com/blog/download-file-in-windows-command-line

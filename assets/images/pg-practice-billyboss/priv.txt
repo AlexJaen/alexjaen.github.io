@@ -1,0 +1,1226 @@
+
+C:\Users\nathan\Nexus\nexus-3.21.0-05>winpeas.bat
+winpeas.bat
+
+ Volume in drive C has no label.
+ Volume Serial Number is EACB-9845
+ Volume in drive C has no label.
+ Volume Serial Number is EACB-9845
+ Volume in drive C has no label.
+ Volume Serial Number is EACB-9845
+ Volume in drive C has no label.
+ Volume Serial Number is EACB-9845
+
+ [+] GPP Password
+                                                                                                       
+ [+] Cloud Credentials                                                                                 
+                                                                                                       
+ [+] AppCmd                                                                                            
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#appcmd.exe     
+C:\Windows\system32\inetsrv\appcmd.exe exists.                                                         
+                                                                                                       
+ [+] Files in registry that may contain credentials                                                    
+   [i] Searching specific files that may contains credentials.                                         
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#credentials-inside-files                                                                                              
+Looking inside HKCU\Software\ORL\WinVNC3\Password                                                      
+Looking inside HKEY_LOCAL_MACHINE\SOFTWARE\RealVNC\WinVNC4/password                                    
+Looking inside HKLM\SOFTWARE\Microsoft\Windows NT\Currentversion\WinLogon                              
+FINDSTR: Write error                                                                                   
+Looking inside HKLM\SYSTEM\CurrentControlSet\Services\SNMP                                             
+                                                                                                       
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SNMP\Parameters                                   
+                                                                                                       
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SNMP\Parameters\ExtensionAgents                   
+    W3SVC    REG_SZ    Software\Microsoft\W3SVC\CurrentVersion                                         
+    FTPSVC    REG_SZ    Software\Microsoft\FTPSVC\CurrentVersion                                       
+                                                                                                       
+Looking inside HKCU\Software\TightVNC\Server                                                           
+Looking inside HKCU\Software\SimonTatham\PuTTY\Sessions                                                
+Looking inside HKCU\Software\OpenSSH\Agent\Keys                                                        
+C:\Users\nathan\Nexus\nexus-3.21.0-05\jre\lib\management\jmxremote.password.template                   
+FINDSTR: Write error                                                                                   
+File Not Found                                                                                         
+                                                                                                       
+---                                                                                                    
+Scan complete.                                                                                         
+     ,/*,..*(((((((((((((((((((((((((((((((((,                                                         
+FINDSTR: Write error                                                                                   
+                                                                                                       
+---                                                                                                    
+Scan complete.                                                                                         
+PowerShell v2 Version:                                                                                 
+                                                                                                       
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PowerShell\1\PowerShellEngine                                    
+    PowerShellVersion    REG_SZ    2.0                                                                 
+                                                                                                       
+PowerShell v5 Version:                                                                                 
+                                                                                                       
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PowerShell\3\PowerShellEngine                                    
+    PowerShellVersion    REG_SZ    5.1.18362.1                                                         
+                                                                                                       
+Transcriptions Settings:                                                                               
+Module logging settings:                                                                               
+Scriptblog logging settings:                                                                           
+                                                                                                       
+PS default transcript history                                                                          
+                                                                                                       
+Checking PS history file                                                                               
+ Volume in drive C has no label.                                                                       
+ Volume Serial Number is EACB-9845                                                                     
+                                                                                                       
+ Directory of C:\Users\nathan\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine                  
+                                                                                                       
+05/28/2020  10:14 PM               112 ConsoleHost_history.txt                                         
+               1 File(s)            112 bytes                                                          
+               0 Dir(s)   8,824,360,960 bytes free                                                     
+                                                                                                       
+ [+] MOUNTED DISKS                                                                                     
+   [i] Maybe you find something interesting                                                            
+                                                                                                       
+ [+] ENVIRONMENT                                                                                       
+   [i] Interesting information?                                                                        
+                                                                                                       
+ALLUSERSPROFILE=C:\ProgramData                                                                         
+APPDATA=C:\Users\nathan\AppData\Roaming                                                                
+CommonProgramFiles=C:\Program Files\Common Files                                                       
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files                                            
+CommonProgramW6432=C:\Program Files\Common Files                                                       
+COMPUTERNAME=BILLYBOSS                                                                                 
+ComSpec=C:\Windows\system32\cmd.exe                                                                    
+CurrentLine= 0x1B[33m[+]0x1B[97m ENVIRONMENT                                                           
+DriverData=C:\Windows\System32\Drivers\DriverData                                                      
+E=0x1B[                                                                                                
+LOCALAPPDATA=C:\Users\nathan\AppData\Local                                                             
+long=false                                                                                             
+NUMBER_OF_PROCESSORS=1                                                                                 
+OneDrive=C:\Users\nathan\OneDrive                                                                      
+OS=Windows_NT                                                                                          
+Path=C:\Users\nathan\Nexus\nexus-3.21.0-05\bin\..\lib;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files (x86)\dotnet\;C:\Users\nathan\AppData\Local\Microsoft\WindowsApps;c:\users\nathan\nexus\nexus-3.21.0-05\jre\bin                                                                            
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC                                          
+Percentage=1                                                                                           
+PercentageTrack=34                                                                                     
+PROCESSOR_ARCHITECTURE=AMD64                                                                           
+PROCESSOR_IDENTIFIER=AMD64 Family 23 Model 1 Stepping 2, AuthenticAMD                                  
+PROCESSOR_LEVEL=23                                                                                     
+PROCESSOR_REVISION=0102                                                                                
+ProgramData=C:\ProgramData                                                                             
+ProgramFiles=C:\Program Files                                                                          
+ProgramFiles(x86)=C:\Program Files (x86)                                                               
+ProgramW6432=C:\Program Files                                                                          
+PROMPT=$P$G                                                                                            
+PSModulePath=%ProgramFiles%\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules                                                                                                      
+PUBLIC=C:\Users\Public                                                                                 
+SystemDrive=C:                                                                                         
+SystemRoot=C:\Windows                                                                                  
+TEMP=C:\Users\nathan\AppData\Local\Temp                                                                
+TMP=C:\Users\nathan\AppData\Local\Temp                                                                 
+USERDOMAIN=BILLYBOSS                                                                                   
+USERNAME=nathan                                                                                        
+USERPROFILE=C:\Users\nathan                                                                            
+windir=C:\Windows                                                                                      
+                                                                                                       
+ [+] INSTALLED SOFTWARE                                                                                
+   [i] Some weird software? Check for vulnerabilities in unknow software installed                     
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#software       
+                                                                                                       
+<output file>                                                                                          
+The handle is invalid.                                                                                 
+                                                                                                       
+Looking inside HKCU\Software\OpenSSH\Agent\Keys                                                        
+C:\Users\nathan\Nexus\nexus-3.21.0-05\jre\lib\management\jmxremote.password.template                   
+FINDSTR: Write error                                                                                   
+File Not Found                                                                                         
+                                                                                                       
+---                                                                                                    
+Scan complete.                                                                                         
+ [+] Remote Desktop Credentials Manager                                                                
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#remote-desktop-credential-manager                                                                                     
+                                                                                                       
+                                                                                                       
+Looking inside C:\Users\nathan\AppData\Local\Microsoft\Credentials\                                    
+                                                                                                       
+                                                                                                       
+ [+] Unattended files                                                                                  
+                                                                                                       
+ [+] SAM and SYSTEM backups                                                                            
+                                                                                                       
+ [+] McAffee SiteList.xml                                                                              
+ Volume in drive C has no label.                                                                       
+ Volume Serial Number is EACB-9845                                                                     
+ Volume in drive C has no label.                                                                       
+ Volume Serial Number is EACB-9845                                                                     
+ Volume in drive C has no label.                                                                       
+ Volume Serial Number is EACB-9845                                                                     
+ Volume in drive C has no label.                                                                       
+ Volume Serial Number is EACB-9845                                                                     
+                                                                                                       
+ [+] GPP Password                                                                                      
+                                                                                                       
+ [+] Cloud Credentials                                                                                 
+                                                                                                       
+ [+] AppCmd                                                                                            
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#appcmd.exe     
+C:\Windows\system32\inetsrv\appcmd.exe exists.                                                         
+                                                                                                       
+ [+] Files in registry that may contain credentials                                                    
+   [i] Searching specific files that may contains credentials.                                         
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#credentials-inside-files                                                                                              
+Looking inside HKCU\Software\ORL\WinVNC3\Password                                                      
+Looking inside HKEY_LOCAL_MACHINE\SOFTWARE\RealVNC\WinVNC4/password                                    
+Looking inside HKLM\SOFTWARE\Microsoft\Windows NT\Currentversion\WinLogon                              
+FINDSTR: Write error                                                                                   
+Looking inside HKLM\SYSTEM\CurrentControlSet\Services\SNMP                                             
+                                                                                                       
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SNMP\Parameters                                   
+                                                                                                       
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SNMP\Parameters\ExtensionAgents                   
+    W3SVC    REG_SZ    Software\Microsoft\W3SVC\CurrentVersion                                         
+    FTPSVC    REG_SZ    Software\Microsoft\FTPSVC\CurrentVersion                                       
+                                                                                                       
+Looking inside HKCU\Software\TightVNC\Server                                                           
+Looking inside HKCU\Software\SimonTatham\PuTTY\Sessions                                                
+Looking inside HKCU\Software\OpenSSH\Agent\Keys                                                        
+C:\Users\nathan\Nexus\nexus-3.21.0-05\jre\lib\management\jmxremote.password.template                   
+FINDSTR: Write error                                                                                   
+File Not Found                                                                                         
+                                                                                                       
+---                                                                                                    
+Scan complete.                                                                                         
+User name                    nathan                                                                    
+Full Name                                                                                              
+Comment                                                                                                
+User's comment                                                                                         
+Country/region code          000 (System Default)                                                      
+Account active               Yes                                                                       
+Account expires              Never                                                                     
+                                                                                                       
+Password last set            ?5/?28/?2020 10:15:19 PM                                                  
+Password expires             Never                                                                     
+Password changeable          ?5/?28/?2020 10:15:19 PM                                                  
+Password required            No                                                                        
+User may change password     Yes                                                                       
+                                                                                                       
+Workstations allowed         All                                                                       
+Logon script                                                                                           
+User profile                                                                                           
+Home directory                                                                                         
+Last logon                   ?2/?17/?2023 9:28:46 AM                                                   
+                                                                                                       
+Logon hours allowed          All                                                                       
+                                                                                                       
+Local Group Memberships                                                                                
+Global Group memberships     *None                                                                     
+The command completed successfully.                                                                    
+                                                                                                       
+The request will be processed at a domain controller for domain WORKGROUP.                             
+                                                                                                       
+                                                                                                       
+USER INFORMATION                                                                                       
+----------------                                                                                       
+                                                                                                       
+User Name        SID                                                                                   
+================ ==============================================                                        
+billyboss\nathan S-1-5-21-2389609380-2620298947-1153829925-1001                                        
+                                                                                                       
+                                                                                                       
+GROUP INFORMATION                                                                                      
+-----------------                                                                                      
+                                                                                                       
+Group Name                           Type             SID          Attributes                                                                                                                                 
+==================================== ================ ============ ==================================================                                                                                         
+Everyone                             Well-known group S-1-1-0      Mandatory group, Enabled by default, Enabled group                                                                                         
+BUILTIN\Users                        Alias            S-1-5-32-545 Mandatory group, Enabled by default, Enabled group                                                                                         
+NT AUTHORITY\SERVICE                 Well-known group S-1-5-6      Mandatory group, Enabled by default, Enabled group                                                                                         
+CONSOLE LOGON                        Well-known group S-1-2-1      Mandatory group, Enabled by default, Enabled group                                                                                         
+NT AUTHORITY\Authenticated Users     Well-known group S-1-5-11     Mandatory group, Enabled by default, Enabled group                                                                                         
+NT AUTHORITY\This Organization       Well-known group S-1-5-15     Mandatory group, Enabled by default, Enabled group                                                                                         
+NT AUTHORITY\Local account           Well-known group S-1-5-113    Mandatory group, Enabled by default, Enabled group                                                                                         
+LOCAL                                Well-known group S-1-2-0      Mandatory group, Enabled by default, Enabled group                                                                                         
+NT AUTHORITY\NTLM Authentication     Well-known group S-1-5-64-10  Mandatory group, Enabled by default, Enabled group                                                                                         
+Mandatory Label\High Mandatory Level Label            S-1-16-12288                                                                                                                                            
+                                                                                                       
+                                                                                                       
+PRIVILEGES INFORMATION                                                                                 
+----------------------                                                                                 
+                                                                                                       
+Privilege Name                Description                               State                          
+============================= ========================================= ========                       
+SeShutdownPrivilege           Shut down the system                      Disabled                       
+SeChangeNotifyPrivilege       Bypass traverse checking                  Enabled                        
+SeUndockPrivilege             Remove computer from docking station      Disabled                       
+SeImpersonatePrivilege        Impersonate a client after authentication Enabled                        
+SeCreateGlobalPrivilege       Create global objects                     Enabled                        
+SeIncreaseWorkingSetPrivilege Increase a process working set            Disabled                       
+SeTimeZonePrivilege           Change the time zone                      Disabled                       
+                                                                                                       
+                                                                                                       
+ [+] USERS                                                                                             
+                                                                                                       
+User accounts for \\BILLYBOSS                                                                          
+                                                                                                       
+-------------------------------------------------------------------------------                        
+Administrator            DefaultAccount           Guest                                                
+nathan                   WDAGUtilityAccount                                                            
+The command completed successfully.                                                                    
+                                                                                                       
+                                                                                                       
+ [+] GROUPS                                                                                            
+                                                                                                       
+Aliases for \\BILLYBOSS                                                                                
+                                                                                                       
+-------------------------------------------------------------------------------                        
+*Access Control Assistance Operators                                                                   
+*Administrators                                                                                        
+*Backup Operators                                                                                      
+*Cryptographic Operators                                                                               
+*Device Owners                                                                                         
+*Distributed COM Users                                                                                 
+*Event Log Readers                                                                                     
+*Guests                                                                                                
+*Hyper-V Administrators                                                                                
+*IIS_IUSRS                                                                                             
+*Network Configuration Operators                                                                       
+*Performance Log Users                                                                                 
+*Performance Monitor Users                                                                             
+*Power Users                                                                                           
+*Remote Desktop Users                                                                                  
+*Remote Management Users                                                                               
+*Replicator                                                                                            
+*System Managed Accounts Group                                                                         
+*Users                                                                                                 
+The command completed successfully.                                                                    
+                                                                                                       
+                                                                                                       
+ [+] ADMINISTRATORS GROUPS                                                                             
+Alias name     Administrators                                                                          
+Comment        Administrators have complete and unrestricted access to the computer/domain             
+                                                                                                       
+Members                                                                                                
+                                                                                                       
+-------------------------------------------------------------------------------                        
+Administrator                                                                                          
+The command completed successfully.                                                                    
+                                                                                                       
+                                                                                                       
+ [+] CURRENT LOGGED USERS                                                                              
+No User exists for *                                                                                   
+                                                                                                       
+ [+] Kerberos Tickets                                                                                  
+                                                                                                       
+Current LogonId is 0:0x18496                                                                           
+                                                                                                       
+Cached Tickets: (0)                                                                                    
+                                                                                                       
+ [+] CURRENT CLIPBOARD                                                                                 
+   [i] Any passwords inside the clipboard?                                                             
+                                                                                                       
+[*] SERVICE VULNERABILITIES                                                                            
+                                                                                                       
+ Volume in drive C has no label.                                                                       
+ Volume Serial Number is EACB-9845                                                                     
+ Volume in drive C has no label.                                                                       
+ Volume Serial Number is EACB-9845                                                                     
+ Volume in drive C has no label.                                                                       
+ Volume Serial Number is EACB-9845                                                                     
+ Volume in drive C has no label.                                                                       
+ Volume Serial Number is EACB-9845                                                                     
+                                                                                                       
+ [+] GPP Password                                                                                      
+                                                                                                       
+ [+] Cloud Credentials                                                                                 
+                                                                                                       
+ [+] AppCmd                                                                                            
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#appcmd.exe     
+C:\Windows\system32\inetsrv\appcmd.exe exists.                                                         
+                                                                                                       
+ [+] Files in registry that may contain credentials                                                    
+   [i] Searching specific files that may contains credentials.                                         
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#credentials-inside-files                                                                                              
+Looking inside HKCU\Software\ORL\WinVNC3\Password                                                      
+Looking inside HKEY_LOCAL_MACHINE\SOFTWARE\RealVNC\WinVNC4/password                                    
+Looking inside HKLM\SOFTWARE\Microsoft\Windows NT\Currentversion\WinLogon                              
+FINDSTR: Write error                                                                                   
+Looking inside HKLM\SYSTEM\CurrentControlSet\Services\SNMP                                             
+                                                                                                       
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SNMP\Parameters                                   
+                                                                                                       
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SNMP\Parameters\ExtensionAgents                   
+    W3SVC    REG_SZ    Software\Microsoft\W3SVC\CurrentVersion                                         
+    FTPSVC    REG_SZ    Software\Microsoft\FTPSVC\CurrentVersion                                       
+                                                                                                       
+Looking inside HKCU\Software\TightVNC\Server                                                           
+Looking inside HKCU\Software\SimonTatham\PuTTY\Sessions                                                
+Looking inside HKCU\Software\OpenSSH\Agent\Keys                                                        
+C:\Users\nathan\Nexus\nexus-3.21.0-05\jre\lib\management\jmxremote.password.template                   
+FINDSTR: Write error                                                                                   
+File Not Found                                                                                         
+                                                                                                       
+---                                                                                                    
+Scan complete.                                                                                         
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#services       
+                                                                                                       
+ [+] CHECK IF YOU CAN MODIFY ANY SERVICE REGISTRY                                                      
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#services       
+                                                                                                       
+ [+] UNQUOTED SERVICE PATHS                                                                            
+   [i] When the path is not quoted (ex: C:\Program files\soft\new folder\exec.exe) Windows will try to execute first 'C:\Program.exe', then 'C:\Program Files\soft\new.exe' and finally 'C:\Program Files\soft\new folder\exec.exe'. Try to create 'C:\Program Files\soft\new.exe'                                   
+   [i] The permissions are also checked and filtered using icacls                                      
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#services       
+NetTcpPortSharing                                                                                      
+ C:\Windows\Microsoft.NET\Framework64\v4.0.30319\SMSvcHost.exe                                         
+PerfHost                                                                                               
+ C:\Windows\SysWow64\perfhost.exe                                                                      
+TrustedInstaller                                                                                       
+ C:\Windows\servicing\TrustedInstaller.exe                                                             
+                                                                                                       
+[*] DLL HIJACKING in PATHenv variable                                                                  
+   [i] Maybe you can take advantage of modifying/creating some binary in some of the following locations                                                                                                      
+   [i] PATH variable entries permissions - place binary or DLL to execute instead of legitimate        
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#dll-hijacking  
+                                                                                                       
+[*] CREDENTIALS                                                                                        
+                                                                                                       
+ [+] WINDOWS VAULT                                                                                     
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#windows-vault  
+                                                                                                       
+Currently stored credentials:                                                                          
+                                                                                                       
+* NONE *                                                                                               
+                                                                                                       
+ [+] DPAPI MASTER KEYS                                                                                 
+   [i] Use the Mimikatz 'dpapi::masterkey' module with appropriate arguments (/rpc) to decrypt         
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#dpapi          
+                                                                                                       
+                                                                                                       
+    Directory: C:\Users\nathan\AppData\Roaming\Microsoft\Protect                                       
+                                                                                                       
+                                                                                                       
+Mode                LastWriteTime         Length Name                                                                                                                                                         
+----                -------------         ------ ----                                                                                                                                                         
+d---s-        5/25/2020   9:06 AM                S-1-5-21-2389609380-2620298947-1153829925-1001                                                                                                               
+                                                                                                       
+                                                                                                       
+ [+] DPAPI MASTER KEYS                                                                                 
+   [i] Use the Mimikatz 'dpapi::cred' module with appropriate /masterkey to decrypt                    
+   [i] You can also extract many DPAPI masterkeys from memory with the Mimikatz 'sekurlsa::dpapi' module                                                                                                      
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#dpapi          
+                                                                                                       
+Looking inside C:\Users\nathan\AppData\Roaming\Microsoft\Credentials\                                  
+                                                                                                       
+The system cannot find the batch label specified - T_Progress                                          
+                                                                                                       
+Looking inside C:\Users\nathan\AppData\Local\Microsoft\Credentials\                                    
+                                                                                                       
+                                                                                                       
+ [+] Unattended files                                                                                  
+                                                                                                       
+ [+] SAM and SYSTEM backups                                                                            
+                                                                                                       
+ [+] McAffee SiteList.xml                                                                              
+ Volume in drive C has no label.                                                                       
+ Volume Serial Number is EACB-9845                                                                     
+ Volume in drive C has no label.                                                                       
+ Volume Serial Number is EACB-9845                                                                     
+ Volume in drive C has no label.                                                                       
+ Volume Serial Number is EACB-9845                                                                     
+ Volume in drive C has no label.                                                                       
+ Volume Serial Number is EACB-9845                                                                     
+                                                                                                       
+ [+] GPP Password                                                                                      
+                                                                                                       
+ [+] Cloud Credentials                                                                                 
+                                                                                                       
+ [+] AppCmd                                                                                            
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#appcmd.exe     
+C:\Windows\system32\inetsrv\appcmd.exe exists.                                                         
+                                                                                                       
+ [+] Files in registry that may contain credentials                                                    
+   [i] Searching specific files that may contains credentials.                                         
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#credentials-inside-files                                                                                              
+Looking inside HKCU\Software\ORL\WinVNC3\Password                                                      
+Looking inside HKEY_LOCAL_MACHINE\SOFTWARE\RealVNC\WinVNC4/password                                    
+Looking inside HKLM\SOFTWARE\Microsoft\Windows NT\Currentversion\WinLogon                              
+FINDSTR: Write error                                                                                   
+Looking inside HKLM\SYSTEM\CurrentControlSet\Services\SNMP                                             
+                                                                                                       
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SNMP\Parameters                                   
+                                                                                                       
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SNMP\Parameters\ExtensionAgents                   
+    W3SVC    REG_SZ    Software\Microsoft\W3SVC\CurrentVersion                                         
+    FTPSVC    REG_SZ    Software\Microsoft\FTPSVC\CurrentVersion                                       
+                                                                                                       
+Looking inside HKCU\Software\TightVNC\Server                                                           
+Looking inside HKCU\Software\SimonTatham\PuTTY\Sessions                                                
+Looking inside HKCU\Software\OpenSSH\Agent\Keys                                                        
+C:\Users\nathan\Nexus\nexus-3.21.0-05\jre\lib\management\jmxremote.password.template                   
+FINDSTR: Write error                                                                                   
+File Not Found                                                                                         
+                                                                                                       
+---                                                                                                    
+Scan complete.                                                                                         
+   [i] You can inject 'fake' updates into non-SSL WSUS traffic (WSUXploit)                             
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#wsus           
+                                                                                                       
+ [+] RUNNING PROCESSES                                                                                 
+   [i] Something unexpected is running? Check for vulnerabilities                                      
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#running-processes                                                                                                     
+                                                                                                       
+Image Name                     PID Services                                                            
+========================= ======== ============================================                        
+System Idle Process              0 N/A                                                                 
+System                           4 N/A                                                                 
+Registry                        68 N/A                                                                 
+smss.exe                       316 N/A                                                                 
+csrss.exe                      424 N/A                                                                 
+wininit.exe                    520 N/A                                                                 
+csrss.exe                      528 N/A                                                                 
+winlogon.exe                   588 N/A                                                                 
+services.exe                   612 N/A                                                                 
+lsass.exe                      620 KeyIso, SamSs                                                       
+fontdrvhost.exe                716 N/A                                                                 
+fontdrvhost.exe                724 N/A                                                                 
+svchost.exe                    740 BrokerInfrastructure, DcomLaunch, LSM,                              
+                                   PlugPlay, Power, SystemEventsBroker                                 
+svchost.exe                    832 RpcEptMapper, RpcSs                                                 
+LogonUI.exe                    920 N/A                                                                 
+dwm.exe                        960 N/A                                                                 
+svchost.exe                    112 BITS, DsmSvc, IKEEXT, iphlpsvc,                                     
+                                   LanmanServer, ProfSvc, Schedule, SENS,                              
+                                   ShellHWDetection, Themes, UserManager,                              
+                                   Winmgmt, WpnService                                                 
+svchost.exe                    360 CoreMessagingRegistrar, DPS                                         
+svchost.exe                    368 Dhcp, EventLog, lmhosts, TimeBrokerSvc,                             
+                                   WinHttpAutoProxySvc                                                 
+svchost.exe                    408 AudioEndpointBuilder, DsSvc, NcbService,                            
+                                   Netman, PcaSvc, StorSvc, SysMain, TrkWks                            
+svchost.exe                   1080 CDPSvc, DispBrokerDesktopSvc, EventSystem,                          
+                                   FontCache, netprofm, nsi, SstpSvc,                                  
+                                   WdiServiceHost                                                      
+svchost.exe                   1176 CryptSvc, Dnscache, LanmanWorkstation,                              
+                                   NlaSvc                                                              
+Memory Compression            1368 N/A                                                                 
+svchost.exe                   1452 Audiosrv                                                            
+svchost.exe                   1540 DusmSvc                                                             
+svchost.exe                   1548 Wcmsvc                                                              
+svchost.exe                   1608 BFE, mpssvc                                                         
+svchost.exe                   1956 PolicyAgent                                                         
+svchost.exe                   1988 AppHostSvc                                                          
+svchost.exe                   2028 DiagTrack                                                           
+svchost.exe                   1364 ftpsvc                                                              
+VGAuthService.exe             2072 VGAuthService                                                       
+vm3dservice.exe               2104 vm3dservice                                                         
+vmtoolsd.exe                  2112 VMTools                                                             
+svchost.exe                   2188 W3SVC, WAS                                                          
+MsMpEng.exe                   2196 WinDefend                                                           
+svchost.exe                   2296 RasMan                                                              
+vm3dservice.exe               2352 N/A                                                                 
+nexus.exe                     2572 Sonatype Nexus                                                      
+nexus.exe                     2660 N/A                                                                 
+dllhost.exe                   2896 COMSysApp                                                           
+WmiPrvSE.exe                  2780 N/A                                                                 
+msdtc.exe                     3084 MSDTC                                                               
+svchost.exe                   3940 N/A                                                                 
+SgrmBroker.exe                2168 SgrmBroker                                                          
+svchost.exe                   3984 wscsvc                                                              
+SearchIndexer.exe             3116 WSearch                                                             
+svchost.exe                   4024 StateRepository                                                     
+svchost.exe                   5020 InstallService                                                      
+svchost.exe                   4800 W32Time                                                             
+SecurityHealthService.exe     4636 SecurityHealthService                                               
+WmiApSrv.exe                  4688 wmiApSrv                                                            
+svchost.exe                   5004 WbioSrvc                                                            
+shell.exe                     4752 N/A                                                                 
+cmd.exe                       2872 N/A                                                                 
+conhost.exe                   2744 N/A                                                                 
+tasklist.exe                  4884 N/A                                                                 
+                                                                                                       
+   [i] Checking file permissions of running processes (File backdooring - maybe the same files start automatically when Administrator logs in)                                                                
+                                                                                                       
+   [i] Checking directory permissions of running processes (DLL injection)                             
+                                                                                                       
+ [+] RUN AT STARTUP                                                                                    
+   [i] Check if you can modify any binary that is going to be executed by admin or if you can impersonate a not found binary                                                                                  
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#run-at-startup 
+FINDSTR: Write error                                                                                   
+                                                                                                       
+ [+] AlwaysInstallElevated?                                                                            
+   [i] If '1' then you can install a .msi file with admin privileges ;)                                
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#alwaysinstallelevated                                                                                                 
+                                                                                                       
+[*] NETWORK                                                                                            
+                                                                                                       
+ [+] WINDOWS VAULT                                                                                     
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#windows-vault  
+                                                                                                       
+Currently stored credentials:                                                                          
+                                                                                                       
+* NONE *                                                                                               
+                                                                                                       
+ [+] DPAPI MASTER KEYS                                                                                 
+   [i] Use the Mimikatz 'dpapi::masterkey' module with appropriate arguments (/rpc) to decrypt         
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#dpapi          
+                                                                                                       
+                                                                                                       
+    Directory: C:\Users\nathan\AppData\Roaming\Microsoft\Protect                                       
+                                                                                                       
+                                                                                                       
+Mode                LastWriteTime         Length Name                                                                                                                                                         
+----                -------------         ------ ----                                                                                                                                                         
+d---s-        5/25/2020   9:06 AM                S-1-5-21-2389609380-2620298947-1153829925-1001                                                                                                               
+                                                                                                       
+                                                                                                       
+ [+] DPAPI MASTER KEYS                                                                                 
+   [i] Use the Mimikatz 'dpapi::cred' module with appropriate /masterkey to decrypt                    
+   [i] You can also extract many DPAPI masterkeys from memory with the Mimikatz 'sekurlsa::dpapi' module                                                                                                      
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#dpapi          
+                                                                                                       
+Looking inside C:\Users\nathan\AppData\Roaming\Microsoft\Credentials\                                  
+                                                                                                       
+The system cannot find the batch label specified - T_Progress                                          
+                                                                                                       
+Looking inside C:\Users\nathan\AppData\Local\Microsoft\Credentials\                                    
+                                                                                                       
+                                                                                                       
+ [+] Unattended files                                                                                  
+                                                                                                       
+ [+] SAM and SYSTEM backups                                                                            
+                                                                                                       
+ [+] McAffee SiteList.xml                                                                              
+ Volume in drive C has no label.                                                                       
+ Volume Serial Number is EACB-9845                                                                     
+ Volume in drive C has no label.                                                                       
+ Volume Serial Number is EACB-9845                                                                     
+ Volume in drive C has no label.                                                                       
+ Volume Serial Number is EACB-9845                                                                     
+ Volume in drive C has no label.                                                                       
+ Volume Serial Number is EACB-9845                                                                     
+                                                                                                       
+ [+] GPP Password                                                                                      
+                                                                                                       
+ [+] Cloud Credentials                                                                                 
+                                                                                                       
+ [+] AppCmd                                                                                            
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#appcmd.exe     
+C:\Windows\system32\inetsrv\appcmd.exe exists.                                                         
+                                                                                                       
+ [+] Files in registry that may contain credentials                                                    
+   [i] Searching specific files that may contains credentials.                                         
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#credentials-inside-files                                                                                              
+Looking inside HKCU\Software\ORL\WinVNC3\Password                                                      
+Looking inside HKEY_LOCAL_MACHINE\SOFTWARE\RealVNC\WinVNC4/password                                    
+Looking inside HKLM\SOFTWARE\Microsoft\Windows NT\Currentversion\WinLogon                              
+FINDSTR: Write error                                                                                   
+Looking inside HKLM\SYSTEM\CurrentControlSet\Services\SNMP                                             
+                                                                                                       
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SNMP\Parameters                                   
+                                                                                                       
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SNMP\Parameters\ExtensionAgents                   
+    W3SVC    REG_SZ    Software\Microsoft\W3SVC\CurrentVersion                                         
+    FTPSVC    REG_SZ    Software\Microsoft\FTPSVC\CurrentVersion                                       
+                                                                                                       
+Looking inside HKCU\Software\TightVNC\Server                                                           
+Looking inside HKCU\Software\SimonTatham\PuTTY\Sessions                                                
+Looking inside HKCU\Software\OpenSSH\Agent\Keys                                                        
+C:\Users\nathan\Nexus\nexus-3.21.0-05\jre\lib\management\jmxremote.password.template                   
+FINDSTR: Write error                                                                                   
+File Not Found                                                                                         
+                                                                                                       
+---                                                                                                    
+Scan complete.                                                                                         
+                                                                                                       
+Share name   Resource                        Remark                                                    
+                                                                                                       
+-------------------------------------------------------------------------------                        
+C$           C:\                             Default share                                             
+IPC$                                         Remote IPC                                                
+ADMIN$       C:\Windows                      Remote Admin                                              
+The command completed successfully.                                                                    
+                                                                                                       
+                                                                                                       
+ [+] INTERFACES                                                                                        
+                                                                                                       
+Windows IP Configuration                                                                               
+                                                                                                       
+   Host Name . . . . . . . . . . . . : billyboss                                                       
+   Primary Dns Suffix  . . . . . . . :                                                                 
+   Node Type . . . . . . . . . . . . : Hybrid                                                          
+   IP Routing Enabled. . . . . . . . : No                                                              
+   WINS Proxy Enabled. . . . . . . . : No                                                              
+                                                                                                       
+Ethernet adapter Ethernet0:                                                                            
+                                                                                                       
+   Connection-specific DNS Suffix  . :                                                                 
+   Description . . . . . . . . . . . : vmxnet3 Ethernet Adapter                                        
+   Physical Address. . . . . . . . . : 00-50-56-BA-52-AD                                               
+   DHCP Enabled. . . . . . . . . . . : No                                                              
+   Autoconfiguration Enabled . . . . : Yes                                                             
+   IPv4 Address. . . . . . . . . . . : 192.168.201.61(Preferred)                                       
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0                                                   
+   Default Gateway . . . . . . . . . : 192.168.201.254                                                 
+   DNS Servers . . . . . . . . . . . : 192.168.201.254                                                 
+   NetBIOS over Tcpip. . . . . . . . : Enabled                                                         
+                                                                                                       
+ [+] USED PORTS                                                                                        
+   [i] Check for services restricted from the outside                                                  
+FINDSTR: Write error                                                                                   
+                                                                                                       
+---                                                                                                    
+Scan complete.                                                                                         
+ [+] FIREWALL                                                                                          
+                                                                                                       
+Firewall status:                                                                                       
+-------------------------------------------------------------------                                    
+Profile                           = Standard                                                           
+Operational mode                  = Disable                                                            
+Exception mode                    = Enable                                                             
+Multicast/broadcast response mode = Enable                                                             
+Notification mode                 = Enable                                                             
+Group policy version              = Windows Defender Firewall                                          
+Remote admin mode                 = Disable                                                            
+                                                                                                       
+Ports currently open on all network interfaces:                                                        
+Port   Protocol  Version  Program                                                                      
+-------------------------------------------------------------------                                    
+No ports are currently open on all network interfaces.                                                 
+                                                                                                       
+IMPORTANT: Command executed successfully.                                                              
+However, "netsh firewall" is deprecated;                                                               
+use "netsh advfirewall firewall" instead.                                                              
+For more information on using "netsh advfirewall firewall" commands                                    
+instead of "netsh firewall", see KB article 947709                                                     
+at https://go.microsoft.com/fwlink/?linkid=121488 .                                                    
+                                                                                                       
+                                                                                                       
+                                                                                                       
+Domain profile configuration:                                                                          
+-------------------------------------------------------------------                                    
+Operational mode                  = Disable                                                            
+Exception mode                    = Enable                                                             
+Multicast/broadcast response mode = Enable                                                             
+Notification mode                 = Enable                                                             
+                                                                                                       
+Allowed programs configuration for Domain profile:                                                     
+Mode     Traffic direction    Name / Program                                                           
+-------------------------------------------------------------------                                    
+                                                                                                       
+Port configuration for Domain profile:                                                                 
+Port   Protocol  Mode    Traffic direction     Name                                                    
+-------------------------------------------------------------------                                    
+                                                                                                       
+Standard profile configuration (current):                                                              
+-------------------------------------------------------------------                                    
+Operational mode                  = Disable                                                            
+Exception mode                    = Enable                                                             
+Multicast/broadcast response mode = Enable                                                             
+Notification mode                 = Enable                                                             
+                                                                                                       
+Service configuration for Standard profile:                                                            
+Mode     Customized  Name                                                                              
+-------------------------------------------------------------------                                    
+Enable   No          Network Discovery                                                                 
+                                                                                                       
+Allowed programs configuration for Standard profile:                                                   
+Mode     Traffic direction    Name / Program                                                           
+-------------------------------------------------------------------                                    
+                                                                                                       
+Port configuration for Standard profile:                                                               
+Port   Protocol  Mode    Traffic direction     Name                                                    
+-------------------------------------------------------------------                                    
+                                                                                                       
+Log configuration:                                                                                     
+-------------------------------------------------------------------                                    
+File location   = C:\Windows\system32\LogFiles\Firewall\pfirewall.log                                  
+Max file size   = 4096 KB                                                                              
+Dropped packets = Disable                                                                              
+Connections     = Disable                                                                              
+                                                                                                       
+IMPORTANT: Command executed successfully.                                                              
+However, "netsh firewall" is deprecated;                                                               
+use "netsh advfirewall firewall" instead.                                                              
+For more information on using "netsh advfirewall firewall" commands                                    
+instead of "netsh firewall", see KB article 947709                                                     
+at https://go.microsoft.com/fwlink/?linkid=121488 .                                                    
+                                                                                                       
+                                                                                                       
+                                                                                                       
+ [+] ARP                                                                                               
+                                                                                                       
+Interface: 192.168.201.61 --- 0x9                                                                      
+  Internet Address      Physical Address      Type                                                     
+  192.168.201.254       00-50-56-ba-78-c5     dynamic                                                  
+  192.168.201.255       ff-ff-ff-ff-ff-ff     static                                                   
+  224.0.0.22            01-00-5e-00-00-16     static                                                   
+  224.0.0.251           01-00-5e-00-00-fb     static                                                   
+  224.0.0.252           01-00-5e-00-00-fc     static                                                   
+  239.255.255.250       01-00-5e-7f-ff-fa     static                                                   
+  255.255.255.255       ff-ff-ff-ff-ff-ff     static                                                   
+                                                                                                       
+FINDSTR: Write error                                                                                   
+                                                                                                       
+---                                                                                                    
+Scan complete.                                                                                         
+===========================================================================                            
+Interface List                                                                                         
+  9...00 50 56 ba 52 ad ......vmxnet3 Ethernet Adapter                                                 
+  1...........................Software Loopback Interface 1                                            
+===========================================================================                            
+                                                                                                       
+IPv4 Route Table                                                                                       
+===========================================================================                            
+Active Routes:                                                                                         
+Network Destination        Netmask          Gateway       Interface  Metric                            
+          0.0.0.0          0.0.0.0  192.168.201.254   192.168.201.61     16                            
+        127.0.0.0        255.0.0.0         On-link         127.0.0.1    331                            
+        127.0.0.1  255.255.255.255         On-link         127.0.0.1    331                            
+  127.255.255.255  255.255.255.255         On-link         127.0.0.1    331                            
+    192.168.201.0    255.255.255.0         On-link    192.168.201.61    271                            
+   192.168.201.61  255.255.255.255         On-link    192.168.201.61    271                            
+  192.168.201.255  255.255.255.255         On-link    192.168.201.61    271                            
+        224.0.0.0        240.0.0.0         On-link         127.0.0.1    331                            
+        224.0.0.0        240.0.0.0         On-link    192.168.201.61    271                            
+  255.255.255.255  255.255.255.255         On-link         127.0.0.1    331                            
+  255.255.255.255  255.255.255.255         On-link    192.168.201.61    271                            
+===========================================================================                            
+Persistent Routes:                                                                                     
+  Network Address          Netmask  Gateway Address  Metric                                            
+          0.0.0.0          0.0.0.0  192.168.201.254       1                                            
+===========================================================================                            
+                                                                                                       
+IPv6 Route Table                                                                                       
+===========================================================================                            
+Active Routes:                                                                                         
+ If Metric Network Destination      Gateway                                                            
+  1    331 ::1/128                  On-link                                                            
+  1    331 ff00::/8                 On-link                                                            
+===========================================================================                            
+Persistent Routes:                                                                                     
+  None                                                                                                 
+                                                                                                       
+ [+] Hosts file                                                                                        
+FINDSTR: Write error                                                                                   
+ [+] UNQUOTED SERVICE PATHS                                                                            
+   [i] When the path is not quoted (ex: C:\Program files\soft\new folder\exec.exe) Windows will try to execute first 'C:\Program.exe', then 'C:\Program Files\soft\new.exe' and finally 'C:\Program Files\soft\new folder\exec.exe'. Try to create 'C:\Program Files\soft\new.exe'                                   
+   [i] The permissions are also checked and filtered using icacls                                      
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#services       
+NetTcpPortSharing                                                                                      
+ C:\Windows\Microsoft.NET\Framework64\v4.0.30319\SMSvcHost.exe                                         
+PerfHost                                                                                               
+ C:\Windows\SysWow64\perfhost.exe                                                                      
+TrustedInstaller                                                                                       
+ C:\Windows\servicing\TrustedInstaller.exe                                                             
+                                                                                                       
+[*] DLL HIJACKING in PATHenv variable                                                                  
+   [i] Maybe you can take advantage of modifying/creating some binary in some of the following locations                                                                                                      
+   [i] PATH variable entries permissions - place binary or DLL to execute instead of legitimate        
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#dll-hijacking  
+                                                                                                       
+[*] CREDENTIALS                                                                                        
+                                                                                                       
+ [+] WINDOWS VAULT                                                                                     
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#windows-vault  
+                                                                                                       
+Currently stored credentials:                                                                          
+                                                                                                       
+* NONE *                                                                                               
+                                                                                                       
+ [+] DPAPI MASTER KEYS                                                                                 
+   [i] Use the Mimikatz 'dpapi::masterkey' module with appropriate arguments (/rpc) to decrypt         
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#dpapi          
+                                                                                                       
+                                                                                                       
+    Directory: C:\Users\nathan\AppData\Roaming\Microsoft\Protect                                       
+                                                                                                       
+                                                                                                       
+Mode                LastWriteTime         Length Name                                                                                                                                                         
+----                -------------         ------ ----                                                                                                                                                         
+d---s-        5/25/2020   9:06 AM                S-1-5-21-2389609380-2620298947-1153829925-1001                                                                                                               
+                                                                                                       
+                                                                                                       
+ [+] DPAPI MASTER KEYS                                                                                 
+   [i] Use the Mimikatz 'dpapi::cred' module with appropriate /masterkey to decrypt                    
+   [i] You can also extract many DPAPI masterkeys from memory with the Mimikatz 'sekurlsa::dpapi' module                                                                                                      
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#dpapi          
+                                                                                                       
+Looking inside C:\Users\nathan\AppData\Roaming\Microsoft\Credentials\                                  
+                                                                                                       
+The system cannot find the batch label specified - T_Progress                                          
+                                                                                                       
+Looking inside C:\Users\nathan\AppData\Local\Microsoft\Credentials\                                    
+                                                                                                       
+                                                                                                       
+ [+] Unattended files                                                                                  
+                                                                                                       
+ [+] SAM and SYSTEM backups                                                                            
+                                                                                                       
+ [+] McAffee SiteList.xml                                                                              
+ Volume in drive C has no label.                                                                       
+ Volume Serial Number is EACB-9845                                                                     
+ Volume in drive C has no label.                                                                       
+ Volume Serial Number is EACB-9845                                                                     
+ Volume in drive C has no label.                                                                       
+ Volume Serial Number is EACB-9845                                                                     
+ Volume in drive C has no label.                                                                       
+ Volume Serial Number is EACB-9845                                                                     
+                                                                                                       
+ [+] GPP Password                                                                                      
+                                                                                                       
+ [+] Cloud Credentials                                                                                 
+                                                                                                       
+ [+] AppCmd                                                                                            
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#appcmd.exe     
+C:\Windows\system32\inetsrv\appcmd.exe exists.                                                         
+                                                                                                       
+ [+] Files in registry that may contain credentials                                                    
+   [i] Searching specific files that may contains credentials.                                         
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#credentials-inside-files                                                                                              
+Looking inside HKCU\Software\ORL\WinVNC3\Password                                                      
+Looking inside HKEY_LOCAL_MACHINE\SOFTWARE\RealVNC\WinVNC4/password                                    
+Looking inside HKLM\SOFTWARE\Microsoft\Windows NT\Currentversion\WinLogon                              
+FINDSTR: Write error                                                                                   
+Looking inside HKLM\SYSTEM\CurrentControlSet\Services\SNMP                                             
+                                                                                                       
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SNMP\Parameters                                   
+                                                                                                       
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SNMP\Parameters\ExtensionAgents                   
+    W3SVC    REG_SZ    Software\Microsoft\W3SVC\CurrentVersion                                         
+    FTPSVC    REG_SZ    Software\Microsoft\FTPSVC\CurrentVersion                                       
+                                                                                                       
+Looking inside HKCU\Software\TightVNC\Server                                                           
+Looking inside HKCU\Software\SimonTatham\PuTTY\Sessions                                                
+Looking inside HKCU\Software\OpenSSH\Agent\Keys                                                        
+C:\Users\nathan\Nexus\nexus-3.21.0-05\jre\lib\management\jmxremote.password.template                   
+FINDSTR: Write error                                                                                   
+File Not Found                                                                                         
+                                                                                                       
+---                                                                                                    
+Scan complete.                                                                                         
+                                                                                                       
+ [+] McAffee SiteList.xml                                                                              
+ Volume in drive C has no label.                                                                       
+ Volume Serial Number is EACB-9845                                                                     
+ Volume in drive C has no label.                                                                       
+ Volume Serial Number is EACB-9845                                                                     
+ Volume in drive C has no label.                                                                       
+ Volume Serial Number is EACB-9845                                                                     
+ Volume in drive C has no label.                                                                       
+ Volume Serial Number is EACB-9845                                                                     
+                                                                                                       
+ [+] GPP Password                                                                                      
+                                                                                                       
+ [+] Cloud Credentials                                                                                 
+                                                                                                       
+ [+] AppCmd                                                                                            
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#appcmd.exe     
+C:\Windows\system32\inetsrv\appcmd.exe exists.                                                         
+                                                                                                       
+ [+] Files in registry that may contain credentials                                                    
+   [i] Searching specific files that may contains credentials.                                         
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#credentials-inside-files                                                                                              
+Looking inside HKCU\Software\ORL\WinVNC3\Password                                                      
+Looking inside HKEY_LOCAL_MACHINE\SOFTWARE\RealVNC\WinVNC4/password                                    
+Looking inside HKLM\SOFTWARE\Microsoft\Windows NT\Currentversion\WinLogon                              
+FINDSTR: Write error                                                                                   
+Looking inside HKLM\SYSTEM\CurrentControlSet\Services\SNMP                                             
+                                                                                                       
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SNMP\Parameters                                   
+                                                                                                       
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SNMP\Parameters\ExtensionAgents                   
+    W3SVC    REG_SZ    Software\Microsoft\W3SVC\CurrentVersion                                         
+    FTPSVC    REG_SZ    Software\Microsoft\FTPSVC\CurrentVersion                                       
+                                                                                                       
+Looking inside HKCU\Software\TightVNC\Server                                                           
+Looking inside HKCU\Software\SimonTatham\PuTTY\Sessions                                                
+Looking inside HKCU\Software\OpenSSH\Agent\Keys                                                        
+C:\Users\nathan\Nexus\nexus-3.21.0-05\jre\lib\management\jmxremote.password.template                   
+FINDSTR: Write error                                                                                   
+File Not Found                                                                                         
+                                                                                                       
+---                                                                                                    
+Scan complete.                                                                                         
+                                                                                                       
+Looking inside HKCU\Software\TightVNC\Server                                                           
+Looking inside HKCU\Software\SimonTatham\PuTTY\Sessions                                                
+Looking inside HKCU\Software\OpenSSH\Agent\Keys                                                        
+C:\Users\nathan\Nexus\nexus-3.21.0-05\jre\lib\management\jmxremote.password.template                   
+FINDSTR: Write error                                                                                   
+File Not Found                                                                                         
+                                                                                                       
+---                                                                                                    
+Scan complete.                                                                                         
+ [+] WIFI                                                                                              
+[*] BASIC USER INFO                                                                                    
+   [i] Check if you are inside the Administrators group or if you have enabled any token that can be use to escalate privileges like SeImpersonatePrivilege, SeAssignPrimaryPrivilege, SeTcbPrivilege, SeBackupPrivilege, SeRestorePrivilege, SeCreateTokenPrivilege, SeLoadDriverPrivilege, SeTakeOwnershipPrivilege, SeDebbugPrivilege                                                                                    
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#users-and-groups                                                                                                      
+                                                                                                       
+                                                                                                       
+ [+] FILES WHOSE NAME CONTAINS THE WORD PASS CRED or .config not inside \Windows"                      
+FINDSTR: Write error                                                                                   
+                                                                                                       
+---                                                                                                    
+Scan complete.                                                                                         
+User name                    nathan                                                                    
+Full Name                                                                                              
+Comment                                                                                                
+User's comment                                                                                         
+Country/region code          000 (System Default)                                                      
+Account active               Yes                                                                       
+Account expires              Never                                                                     
+                                                                                                       
+Password last set            ?5/?28/?2020 10:15:19 PM                                                  
+Password expires             Never                                                                     
+Password changeable          ?5/?28/?2020 10:15:19 PM                                                  
+Password required            No                                                                        
+User may change password     Yes                                                                       
+                                                                                                       
+Workstations allowed         All                                                                       
+Logon script                                                                                           
+User profile                                                                                           
+Home directory                                                                                         
+Last logon                   ?2/?17/?2023 9:28:46 AM                                                   
+                                                                                                       
+Logon hours allowed          All                                                                       
+                                                                                                       
+Local Group Memberships                                                                                
+Global Group memberships     *None                                                                     
+The command completed successfully.                                                                    
+                                                                                                       
+The request will be processed at a domain controller for domain WORKGROUP.                             
+                                                                                                       
+                                                                                                       
+USER INFORMATION                                                                                       
+----------------                                                                                       
+                                                                                                       
+User Name        SID                                                                                   
+================ ==============================================                                        
+billyboss\nathan S-1-5-21-2389609380-2620298947-1153829925-1001                                        
+                                                                                                       
+                                                                                                       
+GROUP INFORMATION                                                                                      
+-----------------                                                                                      
+                                                                                                       
+Group Name                           Type             SID          Attributes                                                                                                                                 
+==================================== ================ ============ ==================================================                                                                                         
+Everyone                             Well-known group S-1-1-0      Mandatory group, Enabled by default, Enabled group                                                                                         
+BUILTIN\Users                        Alias            S-1-5-32-545 Mandatory group, Enabled by default, Enabled group                                                                                         
+NT AUTHORITY\SERVICE                 Well-known group S-1-5-6      Mandatory group, Enabled by default, Enabled group                                                                                         
+CONSOLE LOGON                        Well-known group S-1-2-1      Mandatory group, Enabled by default, Enabled group                                                                                         
+NT AUTHORITY\Authenticated Users     Well-known group S-1-5-11     Mandatory group, Enabled by default, Enabled group                                                                                         
+NT AUTHORITY\This Organization       Well-known group S-1-5-15     Mandatory group, Enabled by default, Enabled group                                                                                         
+NT AUTHORITY\Local account           Well-known group S-1-5-113    Mandatory group, Enabled by default, Enabled group                                                                                         
+LOCAL                                Well-known group S-1-2-0      Mandatory group, Enabled by default, Enabled group                                                                                         
+NT AUTHORITY\NTLM Authentication     Well-known group S-1-5-64-10  Mandatory group, Enabled by default, Enabled group                                                                                         
+Mandatory Label\High Mandatory Level Label            S-1-16-12288                                                                                                                                            
+                                                                                                       
+                                                                                                       
+PRIVILEGES INFORMATION                                                                                 
+----------------------                                                                                 
+                                                                                                       
+Privilege Name                Description                               State                          
+============================= ========================================= ========                       
+SeShutdownPrivilege           Shut down the system                      Disabled                       
+SeChangeNotifyPrivilege       Bypass traverse checking                  Enabled                        
+SeUndockPrivilege             Remove computer from docking station      Disabled                       
+SeImpersonatePrivilege        Impersonate a client after authentication Enabled                        
+SeCreateGlobalPrivilege       Create global objects                     Enabled                        
+SeIncreaseWorkingSetPrivilege Increase a process working set            Disabled                       
+SeTimeZonePrivilege           Change the time zone                      Disabled                       
+                                                                                                       
+                                                                                                       
+ [+] USERS                                                                                             
+                                                                                                       
+User accounts for \\BILLYBOSS                                                                          
+                                                                                                       
+-------------------------------------------------------------------------------                        
+Administrator            DefaultAccount           Guest                                                
+nathan                   WDAGUtilityAccount                                                            
+The command completed successfully.                                                                    
+                                                                                                       
+                                                                                                       
+ [+] GROUPS                                                                                            
+                                                                                                       
+Aliases for \\BILLYBOSS                                                                                
+                                                                                                       
+-------------------------------------------------------------------------------                        
+*Access Control Assistance Operators                                                                   
+*Administrators                                                                                        
+*Backup Operators                                                                                      
+*Cryptographic Operators                                                                               
+*Device Owners                                                                                         
+*Distributed COM Users                                                                                 
+*Event Log Readers                                                                                     
+*Guests                                                                                                
+*Hyper-V Administrators                                                                                
+*IIS_IUSRS                                                                                             
+*Network Configuration Operators                                                                       
+*Performance Log Users                                                                                 
+*Performance Monitor Users                                                                             
+*Power Users                                                                                           
+*Remote Desktop Users                                                                                  
+*Remote Management Users                                                                               
+*Replicator                                                                                            
+*System Managed Accounts Group                                                                         
+*Users                                                                                                 
+The command completed successfully.                                                                    
+                                                                                                       
+                                                                                                       
+ [+] ADMINISTRATORS GROUPS                                                                             
+Alias name     Administrators                                                                          
+Comment        Administrators have complete and unrestricted access to the computer/domain             
+                                                                                                       
+Members                                                                                                
+                                                                                                       
+-------------------------------------------------------------------------------                        
+Administrator                                                                                          
+The command completed successfully.                                                                    
+                                                                                                       
+                                                                                                       
+ [+] CURRENT LOGGED USERS                                                                              
+No User exists for *                                                                                   
+                                                                                                       
+ [+] Kerberos Tickets                                                                                  
+                                                                                                       
+Current LogonId is 0:0x18496                                                                           
+                                                                                                       
+Cached Tickets: (0)                                                                                    
+                                                                                                       
+ [+] CURRENT CLIPBOARD                                                                                 
+   [i] Any passwords inside the clipboard?                                                             
+                                                                                                       
+[*] SERVICE VULNERABILITIES                                                                            
+                                                                                                       
+ Volume in drive C has no label.                                                                       
+ Volume Serial Number is EACB-9845                                                                     
+ Volume in drive C has no label.                                                                       
+ Volume Serial Number is EACB-9845                                                                     
+ Volume in drive C has no label.                                                                       
+ Volume Serial Number is EACB-9845                                                                     
+ Volume in drive C has no label.                                                                       
+ Volume Serial Number is EACB-9845                                                                     
+                                                                                                       
+ [+] GPP Password                                                                                      
+                                                                                                       
+ [+] Cloud Credentials                                                                                 
+                                                                                                       
+ [+] AppCmd                                                                                            
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#appcmd.exe     
+C:\Windows\system32\inetsrv\appcmd.exe exists.                                                         
+                                                                                                       
+ [+] Files in registry that may contain credentials                                                    
+   [i] Searching specific files that may contains credentials.                                         
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#credentials-inside-files                                                                                              
+Looking inside HKCU\Software\ORL\WinVNC3\Password                                                      
+Looking inside HKEY_LOCAL_MACHINE\SOFTWARE\RealVNC\WinVNC4/password                                    
+Looking inside HKLM\SOFTWARE\Microsoft\Windows NT\Currentversion\WinLogon                              
+FINDSTR: Write error                                                                                   
+Looking inside HKLM\SYSTEM\CurrentControlSet\Services\SNMP                                             
+                                                                                                       
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SNMP\Parameters                                   
+                                                                                                       
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SNMP\Parameters\ExtensionAgents                   
+    W3SVC    REG_SZ    Software\Microsoft\W3SVC\CurrentVersion                                         
+    FTPSVC    REG_SZ    Software\Microsoft\FTPSVC\CurrentVersion                                       
+                                                                                                       
+Looking inside HKCU\Software\TightVNC\Server                                                           
+Looking inside HKCU\Software\SimonTatham\PuTTY\Sessions                                                
+Looking inside HKCU\Software\OpenSSH\Agent\Keys                                                        
+C:\Users\nathan\Nexus\nexus-3.21.0-05\jre\lib\management\jmxremote.password.template                   
+FINDSTR: Write error                                                                                   
+File Not Found                                                                                         
+                                                                                                       
+---                                                                                                    
+Scan complete.                                                                                         
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#services       
+                                                                                                       
+ [+] CHECK IF YOU CAN MODIFY ANY SERVICE REGISTRY                                                      
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#services       
+                                                                                                       
+ [+] UNQUOTED SERVICE PATHS                                                                            
+   [i] When the path is not quoted (ex: C:\Program files\soft\new folder\exec.exe) Windows will try to execute first 'C:\Program.exe', then 'C:\Program Files\soft\new.exe' and finally 'C:\Program Files\soft\new folder\exec.exe'. Try to create 'C:\Program Files\soft\new.exe'                                   
+   [i] The permissions are also checked and filtered using icacls                                      
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#services       
+NetTcpPortSharing                                                                                      
+ C:\Windows\Microsoft.NET\Framework64\v4.0.30319\SMSvcHost.exe                                         
+PerfHost                                                                                               
+ C:\Windows\SysWow64\perfhost.exe                                                                      
+TrustedInstaller                                                                                       
+ C:\Windows\servicing\TrustedInstaller.exe                                                             
+                                                                                                       
+[*] DLL HIJACKING in PATHenv variable                                                                  
+   [i] Maybe you can take advantage of modifying/creating some binary in some of the following locations                                                                                                      
+   [i] PATH variable entries permissions - place binary or DLL to execute instead of legitimate        
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#dll-hijacking  
+                                                                                                       
+[*] CREDENTIALS                                                                                        
+                                                                                                       
+ [+] WINDOWS VAULT                                                                                     
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#windows-vault  
+                                                                                                       
+Currently stored credentials:                                                                          
+                                                                                                       
+* NONE *                                                                                               
+                                                                                                       
+ [+] DPAPI MASTER KEYS                                                                                 
+   [i] Use the Mimikatz 'dpapi::masterkey' module with appropriate arguments (/rpc) to decrypt         
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#dpapi          
+                                                                                                       
+                                                                                                       
+    Directory: C:\Users\nathan\AppData\Roaming\Microsoft\Protect                                       
+                                                                                                       
+                                                                                                       
+Mode                LastWriteTime         Length Name                                                                                                                                                         
+----                -------------         ------ ----                                                                                                                                                         
+d---s-        5/25/2020   9:06 AM                S-1-5-21-2389609380-2620298947-1153829925-1001                                                                                                               
+                                                                                                       
+                                                                                                       
+ [+] DPAPI MASTER KEYS                                                                                 
+   [i] Use the Mimikatz 'dpapi::cred' module with appropriate /masterkey to decrypt                    
+   [i] You can also extract many DPAPI masterkeys from memory with the Mimikatz 'sekurlsa::dpapi' module                                                                                                      
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#dpapi          
+                                                                                                       
+Looking inside C:\Users\nathan\AppData\Roaming\Microsoft\Credentials\                                  
+                                                                                                       
+The system cannot find the batch label specified - T_Progress                                          
+                                                                                                       
+Looking inside C:\Users\nathan\AppData\Local\Microsoft\Credentials\                                    
+                                                                                                       
+                                                                                                       
+ [+] Unattended files                                                                                  
+                                                                                                       
+ [+] SAM and SYSTEM backups                                                                            
+                                                                                                       
+ [+] McAffee SiteList.xml                                                                              
+ Volume in drive C has no label.                                                                       
+ Volume Serial Number is EACB-9845                                                                     
+ Volume in drive C has no label.                                                                       
+ Volume Serial Number is EACB-9845                                                                     
+ Volume in drive C has no label.                                                                       
+ Volume Serial Number is EACB-9845                                                                     
+ Volume in drive C has no label.                                                                       
+ Volume Serial Number is EACB-9845                                                                     
+                                                                                                       
+ [+] GPP Password                                                                                      
+                                                                                                       
+ [+] Cloud Credentials                                                                                 
+                                                                                                       
+ [+] AppCmd                                                                                            
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#appcmd.exe     
+C:\Windows\system32\inetsrv\appcmd.exe exists.                                                         
+                                                                                                       
+ [+] Files in registry that may contain credentials                                                    
+   [i] Searching specific files that may contains credentials.                                         
+   [?] https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#credentials-inside-files                                                                                              
+Looking inside HKCU\Software\ORL\WinVNC3\Password                                                      
+Looking inside HKEY_LOCAL_MACHINE\SOFTWARE\RealVNC\WinVNC4/password                                    
+Looking inside HKLM\SOFTWARE\Microsoft\Windows NT\Currentversion\WinLogon                              
+FINDSTR: Write error                                                                                   
+Looking inside HKLM\SYSTEM\CurrentControlSet\Services\SNMP                                             
+                                                                                                       
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SNMP\Parameters                                   
+                                                                                                       
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SNMP\Parameters\ExtensionAgents                   
+    W3SVC    REG_SZ    Software\Microsoft\W3SVC\CurrentVersion                                         
+    FTPSVC    REG_SZ    Software\Microsoft\FTPSVC\CurrentVersion                                       
+                                                                                                       
+Looking inside HKCU\Software\TightVNC\Server                                                           
+Looking inside HKCU\Software\SimonTatham\PuTTY\Sessions                                                
+Looking inside HKCU\Software\OpenSSH\Agent\Keys    
