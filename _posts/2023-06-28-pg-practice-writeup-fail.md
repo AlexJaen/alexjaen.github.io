@@ -98,6 +98,7 @@ This rule sets the action the server will take when a host is banned.
 I modified this file to open a reverse shell when a host is banned:
 
 File permissions
+
 ![actionban](\assets\images\pg-practice-fail\18.JPG)
 
 ```
