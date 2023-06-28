@@ -28,6 +28,7 @@ This blog post is a writeup of the Fail machine from Proving Grounds Practice.
 - Uploading a SSH key to this shared folder allows us to connect via SSH as fox user.
 - Fox user belongs to fail2ban group so we are able to modify some config files from this service.
 - Modifying /etc/fail2ban/action.d/iptables-multiform.conf and changing the actionban rule by a reverse shell line we are able to catch a reverse shell as root user.
+
 ### Detailed steps
 ------------------
 
